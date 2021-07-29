@@ -82,7 +82,7 @@ router.get(
     // console.log('id -- >', id);
     const user_ = await User.findById(id).populate('products');
     const userProducts = user_.products;
-    res.render('sell/allProducts', { userProducts });
+    res.render('sell/allproducts', { userProducts });
   })
 );
 
